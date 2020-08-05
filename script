@@ -1,3 +1,4 @@
+print("started")
 local args = {
     [1] = "PurchaseTool",
     [2] = "StormBreaker"
