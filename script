@@ -27,5 +27,8 @@ while _G.FarmApples and wait() do
     game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
     game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
     game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game.Players.LocalPlayer.PlayerGui.MainGui.ScreenFrame.PopUpFrame.Visible = false
+    game.Players.LocalPlayer.PlayerGui.MainGui.ScreenFrame.LevelUp.Visible = false
+    game.Players.LocalPlayer.PlayerGui.MainGui.ScreenFrame.BackpackFullFrame.Visible = false
     end)
 end
