@@ -1,0 +1,31 @@
+local args = {
+    [1] = "PurchaseTool",
+    [2] = "StormBreaker"
+}
+
+game:GetService("ReplicatedStorage").Events.Server:InvokeServer(unpack(args))
+_G.FarmApples = true
+local args = {
+    [1] = "Apple",
+    [2] = game.Workspace.MapFolder.ToolShops.FarmToolShopBuilding.Tools.StormBreaker
+}
+while _G.FarmApples and wait() do
+    spawn(function()
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").Events.Collect:FireServer(unpack(args))
+    end)
+end
