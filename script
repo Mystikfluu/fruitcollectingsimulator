@@ -2,12 +2,11 @@ local args = {
     [1] = "PurchaseTool",
     [2] = "StormBreaker"
 }
-
+local lp = game.Players.LocalPlayer
 game:GetService("ReplicatedStorage").Events.Server:InvokeServer(unpack(args))
-_G.FarmApples = true
 local args = {
     [1] = "Apple",
-    [2] = game.Workspace.MapFolder.ToolShops.FarmToolShopBuilding.Tools.StormBreaker
+    [2] = lp.Backpack:FindFirstChildOfClass("Tool") or lp.Character:FindFirstChildOfClass("Tool") --game.Workspace.MapFolder.ToolShops.FarmToolShopBuilding.Tools.StormBreaker
 }
 while _G.FarmApples and wait() do
     spawn(function()
